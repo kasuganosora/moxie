@@ -1,0 +1,15 @@
+<section class="word-card-view frame">
+    <header>
+        <a href="#" class="back_link"></a>
+        本次需要默写的单词
+        <a href="#/wordcard/{{dictName}}/{{dictType}}/{{dictIndex}}" class="btn btn-small btn-header-right">开始默写</a>
+    </header>
+    <div class="wrapper">
+        <ul class="wlist">
+            <li ng-repeat="item in wordList">
+                <h2 class="word">{{item.word}}<span class="phonetic">{{item.phonetic}}</span></h2>
+                <p class="disp">{{item.description}}</p>
+            </li>
+        </ul>
+    </div>
+</section>

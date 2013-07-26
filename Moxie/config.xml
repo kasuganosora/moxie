@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ Licensed to the Apache Software Foundation (ASF) under one
+ or more contributor license agreements.  See the NOTICE file
+ distributed with this work for additional information
+ regarding copyright ownership.  The ASF licenses this file
+ to you under the Apache License, Version 2.0 (the
+ "License"); you may not use this file except in compliance
+ with the License.  You may obtain a copy of the License at
+
+ http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing,
+ software distributed under the License is distributed on an
+ "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ KIND, either express or implied.  See the License for the
+ specific language governing permissions and limitations
+ under the License.
+-->
+<widget xmlns     = "http://www.w3.org/ns/widgets"
+        id        = "Reitsuki.Moxie"
+        version   = "2.0.0">
+    <name>默写</name>
+
+    <description>
+        本APP是用乱序方法,会把本次需要复习的单词和本次要默写的单词组合起来再把它们的循序打乱,
+        这样更能加固的记忆.而且本app不是是用传统的看单词选择意思的方式,
+        而是使用看意思后要你手打单词的方式. 还有如果你答错的话,这个单词会自动加入单词本,切今后要答对连续答对3次后才不会再出现在你 需要复习的单词里,还有每次打错都会增加3次.
+    </description>
+
+    <author href="http://blog.hcg.im" email="kennyjks@gmail.com" twitter="reitsukision">
+        Reitsuki Sion
+    </author>
+
+    <access origin="*"/>
+
+    <!-- <content src="http://mysite.com/myapp.html" /> for external pages -->
+    <content src="index.html" />
+
+    <!-- Preferences for iOS -->
+    <preference name="AllowInlineMediaPlayback" value="false" />
+    <preference name="AutoHideSplashScreen" value="true" />
+    <preference name="BackupWebStorage" value="cloud" />
+    <preference name="DisallowOverscroll" value="false" />
+    <preference name="EnableLocation" value="false" /><!-- DEPRECATED -->
+    <preference name="EnableViewportScale" value="false" />
+    <preference name="FadeSplashScreen" value="true" />
+    <preference name="FadeSplashScreenDuration" value=".25" />
+    <preference name="HideKeyboardFormAccessoryBar" value="false" />
+    <preference name="KeyboardDisplayRequiresUserAction" value="true" />
+    <preference name="KeyboardShrinksView" value="false" />
+    <preference name="MediaPlaybackRequiresUserAction" value="false" />
+    <preference name="ShowSplashScreenSpinner" value="true" />
+    <preference name="SuppressesIncrementalRendering" value="false" />
+    <preference name="TopActivityIndicator" value="gray" />
+
+
+    <feature name="Geolocation">
+      <param name="ios-package" value="CDVLocation"/>
+    </feature>
+    <feature name="Device">
+      <param name="ios-package" value="CDVDevice"/>
+    </feature>
+    <feature name="Accelerometer">
+      <param name="ios-package" value="CDVAccelerometer"/>
+    </feature>
+    <feature name="Compass">
+      <param name="ios-package" value="CDVLocation"/>
+    </feature>
+    <feature name="Media">
+      <param name="ios-package" value="CDVSound"/>
+    </feature>
+    <feature name="Camera">
+      <param name="ios-package" value="CDVCamera"/>
+    </feature>
+    <feature name="Contacts">
+      <param name="ios-package" value="CDVContacts"/>
+    </feature>
+    <feature name="File">
+      <param name="ios-package"  value="CDVFile"/>
+    </feature>
+    <feature name="NetworkStatus">
+      <param name="ios-package" value="CDVConnection"/>
+    </feature>
+    <feature name="Notification">
+      <param name="ios-package" value="CDVNotification"/>
+    </feature>
+    <feature name="FileTransfer">
+      <param name="ios-package" value="CDVFileTransfer"/>
+    </feature>
+    <feature name="Capture">
+      <param name="ios-package" value="CDVCapture"/>
+    </feature>
+    <feature name="Battery">
+      <param name="ios-package" value="CDVBattery"/>
+    </feature>
+    <feature name="SplashScreen">
+      <param name="ios-package" value="CDVSplashScreen"/>
+    </feature>
+    <feature name="Echo">
+      <param name="ios-package" value="CDVEcho"/>
+    </feature>
+    <feature name="Globalization">
+      <param name="ios-package" value="CDVGlobalization"/>
+    </feature>
+    <feature name="InAppBrowser">
+      <param name="ios-package" value="CDVInAppBrowser"/>
+    </feature>
+    <feature name="Logger">
+      <param name="ios-package" value="CDVLogger"/>
+    </feature>
+    <feature name="LocalStorage">
+        <param name="ios-package" value="CDVLocalStorage"/>
+    </feature>
+    <feature name="Reitsuki">
+        <param name="ios-package" value="Reitsuki" />
+    </feature>
+    <!-- Deprecated plugins element. REmove in 3.0 -->
+    <plugins>
+
+    </plugins>
+</widget>

@@ -1,0 +1,16 @@
+<section class="dict-list frame">
+    <a href="#" class="back_link"></a>
+    <header>词典</header>
+    <div class="wrapper">
+        <div id="scroller">
+            <ul class="list">
+                <li ng-repeat="item in userDicts"><a href="#/wordview/{{item.name}}/userDict/{{$index}}" data-dict-type="userDict" class="dict-item">{{item.name}}</a></li>
+                <li ng-repeat="item in defaultDict"><a href="#/wordview/{{item}}/defaultDict/0" data-dict-type="defaultDict" class="dict-item">{{item}}</a></li>
+            </ul>
+        </div>
+    </div>
+    <ul id="bottom-pad">
+        <li><button class="btn" id="goto-moxie">默写</button></li>
+        <li><button class="btn" id="goto-forgetwords">单词本</button></li>
+    </ul>
+</section>

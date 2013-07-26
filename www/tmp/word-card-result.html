@@ -1,0 +1,25 @@
+<section class="word-card-result frame">
+    <header>
+        <a href="#" class="back_link"></a>
+        本次背诵结果
+    </header>
+    <div class="wrapper">
+      <div ng-show="wrongCount > 0" class="result">
+          <h2>错了{{wrongCount}}个</h2>
+          <h3>错误单词如下</h3>
+          <ul class="wlist">
+              <li ng-repeat="item in wrongWords">
+                  <h2 class="word">{{item.word}}<span class="phonetic"></span></h2>
+                  <p class="disp">{{item.description}}</p>
+              </li>
+          </ul>
+          <p class="tips">请用抄写一遍以上的单词,下次默写的时候可能会抽取到。</p>
+          <a href="#/wordview/{{dictName}}/{{dictType}}/{{dictIndex}}" class="btn">默写下{{wordCount}}个单词</a>
+      </div>
+
+        <div ng-show="wrongCount == 0" class="result">
+            <p>你答对了全部单词</p>
+            <a href="#/wordview/{{dictName}}/{{dictType}}/{{dictIndex}}" class="btn">默写下{{wordCount}}个单词</a>
+        </div>
+    </div>
+</section>
