@@ -12,3 +12,15 @@ Moxie 帮助你快速记忆单词
 需要复习的单词里,还有每次打错都会增加3次.
 
 #截图
+
+##词典界面  
+![词典界面](https://raw.github.com/kasuganosora/moxie/master/Screenshot/1.jpg)  
+
+##本次要默写的单词界面
+![本次要默写的单词界面](https://raw.github.com/kasuganosora/moxie/master/Screenshot/2.jpg)
+
+##默写界面
+![默写界面](https://raw.github.com/kasuganosora/moxie/master/Screenshot/3.jpg)
+
+##单词本界面
+![单词本界面](https://raw.github.com/kasuganosora/moxie/master/Screenshot/4.jpg)
